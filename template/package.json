@@ -1,0 +1,15 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1",
+  "description": "## start",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sheldoncui <websheldoncui@gmail.com> (https://www.cuiyongjian.com)",
+  "license": "MIT"
+}

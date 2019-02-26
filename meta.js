@@ -25,13 +25,13 @@ module.exports = {
         "name": {
             type: 'string',
             required: true,
-            message: '项目名称'
+            message: '请输入一个项目名称'
         },
         "desc": {
             type: 'string',
-            required: true,
+            required: false,
             message: '项目描述',
-            default: '一个基于 LIME.JS 框架的基础项目样板'
+            default: ''
         },
         "test": {
             "type": "confirm",
@@ -46,16 +46,16 @@ module.exports = {
                 "view"
             ]
         }
-        "lintConfig": {
-            "when": "test",
-            "type": "list",
-            "message": "Pick a lint config",
-            "choices": [
-                "standard",
-                "airbnb",
-                "none"
-            ]
-        }
+        // "lintConfig": {
+        //     "when": "test",
+        //     "type": "list",
+        //     "message": "Pick a lint config",
+        //     "choices": [
+        //         "standard",
+        //         "airbnb",
+        //         "none"
+        //     ]
+        // }
     }
 
 }
