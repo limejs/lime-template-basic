@@ -14,7 +14,7 @@ module.exports = {
     skipInterpolation: "mvc/**/*",
     // 过滤: test 目录只在用户 prompt 交互时选择了 needTests 才生成。
     filters: {
-        "test/**/*": "needTests"
+        "test/**/*": "test"
     },
     // handlerbar 的自定义 helper.  两个常用 Handlebars helpers已经内置:  if_eq 和 unless_eq （常用来判断prompt答案）
     helpers: {
