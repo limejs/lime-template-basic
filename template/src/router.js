@@ -4,6 +4,6 @@
 
 module.exports = (router) => {
     router.get('/', 'home@index')
-    router.get('/static/*', router.static('./view'))
-    router.get('/detail', 'home@detail')
+    // router.get('/static/*', router.static('./view'))
+    // router.get('/detail', 'home@detail')
 }
