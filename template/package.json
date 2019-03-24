@@ -1,15 +1,23 @@
 {
-  "name": "{{name}}",
+  "name": "sample-koa",
   "version": "0.0.1",
-  "description": "## start",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "",
+  "main": "entry.js",
   "scripts": {
+    "debug": "cross-env PORT=3000 DEBUG=lime:* NODE_ENV=development nodemon entry.js",
+    "dev": "cross-env PORT=3000 NODE_ENV=development nodemon entry.js",
+    "start": "corss-env NODE_ENV=production node entry.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "sheldoncui <websheldoncui@gmail.com> (https://www.cuiyongjian.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "debug": "^4.1.0",
+    "opn": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
 }

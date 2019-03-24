@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {{#each userlist}}
+        <li>username: {{ this.username }}</li>
+        <li>password: {{ this.password }}</li>
+        <li>phone: {{ this.phone }}</li>
+        {{/each}}
+    </ul>
+    <div>{{domain}}</div>
+    <ul>
+        {{#with state}}
+            <li>{{siteAuthor}}</li>
+            <li>{{cookieKeys}}</li>
+        {{/with}}
+    </ul>
+</body>
+</html>
