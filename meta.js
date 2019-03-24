@@ -41,7 +41,10 @@ module.exports = {
             "type": "checkbox",
             "message": "需要哪些模块?",
             "choices": [
-                "controller",
+                {
+                    name: 'controller',
+                    default: true,
+                },
                 "model",
                 "view"
             ]
