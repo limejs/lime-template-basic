@@ -4,21 +4,19 @@ const path = require("path");
 
 module.exports = function(options) {
   return {
-    middleware(app, config) {
-      app.use(koaViews(path.join(config.paths.src, "views"), {
+    middleware(app) {
+      app.use(koaViews(path.join(this.config.paths.src, "views"), {
+        'extension': 'hbs',
         map: {
-          'hbs': 'handlebar'
+          'hbs': 'handlebars',
         }
       }))
     },
-    view(proto, config) {
+    view(proto) {
       // 视图插件
-      const v = koaViews(path.join(config.paths.src, "views"), {
-        extension: "hbs"
-      });
-      proto.render = (...args) => {
-        return this.ctx.render(...args);
-      };
+      proto.render = function(...args) {
+        return this.ctx.render(...args)
+      }
     }
   }
 }

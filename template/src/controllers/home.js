@@ -1,7 +1,11 @@
 
 module.exports = {
-  async index(ctx) {
-    ctx.body = 'hello'
+  async index() {
+    // this.ctx.body = 'hello'
+    console.log(this.service.invoke('weather', {day: 123}))
+    await this.view.render('home', {
+      title: 'LIME.JS'
+    })
   }
 }
 

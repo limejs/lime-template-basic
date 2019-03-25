@@ -4,6 +4,7 @@ module.exports = function(config) {
     'plugin-logger',
     'plugin-static',
     'plugin-view',
+    'plugin-service',
     {
       name: 'plugin-redis',
       options: {

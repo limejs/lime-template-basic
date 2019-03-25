@@ -1,7 +1,6 @@
 module.exports = function (options) {
   return {
-    service(proto, config) {
-      console.log('redis config', config.redis)
+    service(proto) {
       proto.redis = function () {}
     }
   }
