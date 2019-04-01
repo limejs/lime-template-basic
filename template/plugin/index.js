@@ -9,7 +9,6 @@ module.exports = function(config) {
     },
     'plugin-static',
     'plugin-view',
-    'plugin-service',
     {
       name: 'plugin-redis',
       options: {

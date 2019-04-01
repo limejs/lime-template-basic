@@ -1,11 +1,7 @@
 const chalk = require('chalk')
 
-module.exports = function(options) {
-  return {
-    global() {
-      global.logger = makeLogger()
-    }
-  }
+module.exports = function(app, options) {
+  global.logger = makeLogger()
 }
 
 

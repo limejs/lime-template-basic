@@ -2,8 +2,8 @@
 module.exports = {
   async index() {
     // this.ctx.body = 'hello'
-    console.log(this.service.invoke('weather', {day: 123}))
-    await this.view.render('home', {
+    console.log(this.service('weather').getWeather({day: 123}))
+    await this.render('home', {
       title: 'LIME.JS'
     })
   }
